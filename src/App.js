@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./Pages/landingPage";
+import Navbar from "./Components/navbar";
+import AboutPage from "./Pages/about";
+import BoardPage from "./Pages/board";
+import SitesPage from "./Pages/sites";
+import Footer from "./Components/footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="flex flex-col md:gap-0 gap-20">
+        <Navbar />
+        <LandingPage />
+        <AboutPage  />
+        <SitesPage />
+        <BoardPage  />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
