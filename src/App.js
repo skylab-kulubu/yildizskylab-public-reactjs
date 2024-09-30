@@ -6,6 +6,7 @@ import AboutPage from "./Pages/about";
 import BoardPage from "./Pages/board";
 import SitesPage from "./Pages/sites";
 import Footer from "./Components/footer";
+import TeamsPage from "./Pages/teams";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <LandingPage />
         <AboutPage  />
+        <TeamsPage />
         <SitesPage />
         <BoardPage  />
         <Footer />
