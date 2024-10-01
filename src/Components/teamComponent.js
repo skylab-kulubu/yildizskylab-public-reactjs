@@ -9,11 +9,11 @@ const TeamComponent = ({
   handleScroll
 }) => {
   return (
-    <div className='flex flex-row justify-center lg:justify-between items-center px-24'>
+    <div className='flex flex-row justify-center lg:justify-between items-center px-24 overflow-x-scroll snap-x snap-mandatory'>
       {TeamsData[teamSelect].map((team, index) => (
         <div
           key={index}
-          className='flex flex-col justify-center lg:justify-between items-center space-y-10'
+          className='flex flex-col justify-center lg:justify-between items-center space-y-10 min-w-full lg:min-w-[200px] snap-center'
         >
           <div
             onClick={e => {
