@@ -4,8 +4,8 @@ import SkyLabLogo from "../Assets/Images/skylab-logo-pink.png";
 
 const LandingPage = () => {
   return (
-    <div className="md:h-screen h-[calc(100vh-75px)] snap-start pt-36 bg-cover bg-[0%] flex justify-center items-center overflow-hidden relative">
-      <img src={LandingBackgroundImage} className="absolute top-0 bottom-0 md:h-screen h-[calc(100vh-75px)] min-w-[1024px] w-full pointer-events-none" alt="landing"></img>
+    <div className="h-screen snap-start pt-36 bg-cover bg-[0%] flex justify-center items-center overflow-hidden relative">
+      <img src={LandingBackgroundImage} className="absolute top-0 bottom-0 h-screen min-w-[1024px] w-full pointer-events-none" alt="landing"></img>
       <div className="flex flex-row">
         <div className="flex flex-col text-center items-center justify-center mb-24 lg:-mb-28 space-y-5 w-[calc(100vw-5vw)]">
           <span className="text-[2.8rem] lg:text-[4rem] tracking-[0.2em] lg:tracking-wider -mr-3 leading-[3.4rem] lg:leading-none z-10 text-customLightPink">
