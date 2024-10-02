@@ -8,8 +8,8 @@ const AboutPage = () => {
       <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest">
         <h2 className="text-customAccent text-3xl lg:text-5xl">HAKKIMIZDA</h2>
       </div>
-      <div className="text-center lg:text-left h-full flex justify-center sm:items-center lg:items-start px-6  md:px-12 text-sm md:text-lg lg:text-base font-inter tracking-widest ">
-        <p className="lg:w-1/2 text-customLightPink">
+      <div className="text-justify lg:text-left h-full flex justify-center sm:items-center lg:items-start px-6  md:px-12 text-sm md:text-lg lg:text-base font-inter tracking-widest ">
+        <p className="lg:w-1/2 text-customLightPink text-justify text-lg">
           SKY LAB Bilgisayar Bilimleri Kulübü
           Yıldız Teknik Üniversitesi bünyesinde ar-ge,proje, organizasyon, iş
           geliştirme ve tanıtım ekipleri ile ana yapısını oluşturan en aktif ve

@@ -14,7 +14,7 @@ const LandingPage = () => {
           <span className="text-[4.4rem] lg:text-[9rem] leading-none tracking-[0.3em] z-10 -mr-6 text-center text-customDarkPurple">
             SKY LAB
           </span>
-          <img src={SkyLabLogo} className="absolute h-20 z-10 flex md:hidden bottom-8"></img>
+          <img src={SkyLabLogo} className="absolute h-20 z-10 flex md:hidden bottom-24"></img>
         </div>
       </div>
     </div>
