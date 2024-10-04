@@ -14,10 +14,10 @@ const TeamsPage = () => {
 
   return (
     <section
-      className="h-screen snap-start relative pt-24 lg:pt-36  white md:mt-0 mt-24"
+      className="h-screen snap-start relative pt-24 lg:pt-36  white "
       id="teams"
     >
-      <div className="w-screen flex justify-center md:mt-10 mb-16 tracking-widest mt-12">
+      <div className="w-screen flex justify-center md:mt-10 mb-16 tracking-widest ">
         <h2 className="text-customAccent text-3xl lg:text-5xl">EKİPLERİMİZ</h2>
       </div>
       <div className="text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center">
