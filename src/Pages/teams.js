@@ -17,6 +17,9 @@ const TeamsPage = () => {
       className="h-screen snap-start relative pt-24 lg:pt-36  white md:mt-0 mt-24"
       id="teams"
     >
+      <div className="w-screen flex justify-center md:mt-10 mb-16 tracking-widest mt-12">
+        <h2 className="text-customAccent text-3xl lg:text-5xl">EKİPLERİMİZ</h2>
+      </div>
       <div className="text-customLightPink text-xl tracking-wide lg:text-2xl my-10 lg:my-16 flex justify-center">
         <div className="flex ml-3 lg:ml-0 justify-between w-auto items-center">
           <div

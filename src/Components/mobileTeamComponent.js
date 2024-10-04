@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TeamsData from '../Data/teamsData';
+import {FaAnglesRight , FaAnglesLeft} from 'react-icons/fa6';
 
 const MobileTeamComponent = ({ teamSelect }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +29,7 @@ const MobileTeamComponent = ({ teamSelect }) => {
           onClick={handlePrev}
           className="p-2 text-white bg-customAccent rounded-full"
         >
-          ←
+         <FaAnglesLeft />
         </button>
 
         <div className="flex justify-center items-center space-x-4">
@@ -48,7 +49,7 @@ const MobileTeamComponent = ({ teamSelect }) => {
           onClick={handleNext}
           className="p-2 text-white bg-customAccent rounded-full"
         >
-          →
+          <FaAnglesRight />
         </button>
       </div>
 

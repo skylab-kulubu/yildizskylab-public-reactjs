@@ -21,7 +21,7 @@ const TeamComponent = ({
               setSelectedTeam(team.name);
               handleScroll(e);
             }}
-            className={`w-12 h-12 flex justify-center items-center ring-customAccent ${
+            className={`w-24 h-24 flex justify-center items-center ring-customAccent ${
               teamIndex === index ? 'ring-8' : ''
             } p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
           >
