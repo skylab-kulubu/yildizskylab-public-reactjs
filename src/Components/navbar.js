@@ -28,18 +28,23 @@ const Navbar = () => {
     const scrollingElement = document.getElementById(`${element}`);
     if (scrollingElement) {
       scrollingElement.scrollIntoView({
-        behavior:"smooth"
-      })
+        behavior: "smooth",
+      });
     } else {
-      return
+      return;
     }
-  }
-  
+  };
+
   return (
     <div
-      className={`fixed flex flex-row justify-between items-center px-3 w-full h-[100px] top-0 left-0 z-50 transition-colors duration-150 text-xl tracking-[0.10em]" duration-300 ${  isScrolled ?  " bg-customDarkPurple" : "bg-transparent  "} hidden md:flex`}
+      className={`fixed flex flex-row justify-between items-center px-3 w-full h-[100px] top-0 left-0 z-50 transition-colors duration-150 text-xl tracking-[0.10em]" duration-300 ${
+        isScrolled ? " bg-customDarkPurple" : "bg-transparent  "
+      } hidden md:flex`}
     >
-      <div className=" flex items-center flex-row space-x-2 lg:space-x-6 ml-10 cursor-pointer" onClick={() => scrollToElement("App")}>
+      <div
+        className=" flex items-center flex-row space-x-2 lg:space-x-6 ml-10 cursor-pointer"
+        onClick={() => scrollToElement("App")}
+      >
         <img alt="logo" src={skylablogo} className="w-9 h-9 lg:w-10 lg:h-10" />
         <div className="hidden lg:flex w-2 h-2 mb-[0.4rem] rounded-full bg-customLightPink"></div>
         <h1 className="font-bebasNeue text-3xl lg:text-5xl tracking-[0.3em] font-light text-customLightPink ">
