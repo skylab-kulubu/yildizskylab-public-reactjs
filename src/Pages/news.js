@@ -3,7 +3,7 @@ import { newsFetcher } from "../apis/newsFetcher";
 import NewsComponent from "../Components/newsComponent";
 
 export default function NewsPage() {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -38,25 +38,33 @@ export default function NewsPage() {
         id="news"
         className="w-screen lg:pt-36 bg-customDarkPurple box-border"
       >
-        {loading && <div>Haberler Yükleniyor...</div>}
+        <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
+          <h2 className="text-customAccent text-3xl lg:text-5xl">HABERLER</h2>
+        </div>
 
-        {error && (
-          <div>{`Haberler Yüklenirken Hatayla Karşılaşıldı ${error}`}</div>
+        {error && error !== "Request aborted" && (
+          <div className="text-white text-3xl text-center">{`Haberler Yüklenirken Hatayla Karşılaşıldı: ${error}`}</div>
         )}
-        {news && (
-          <>
-            <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
-              <h2 className="text-customAccent text-3xl lg:text-5xl">
-                HABERLER
-              </h2>
-            </div>
-            <div className="flex gap-10 justify-center">
-              {news.map((newData) => (
-                <NewsComponent key={newData.id} singleNewData={newData} />
-              ))}
-            </div>
-          </>
-        )}
+
+        <div className="flex gap-10 justify-center">
+          {loading &&
+            Array.from({ length: 4 }).map((_, index) => (
+              <NewsComponent
+                key={index}
+                singleNewData={null}
+                textLoading={loading}
+              />
+            ))}
+          {news &&
+            !loading &&
+            news.map((newData) => (
+              <NewsComponent
+                key={newData.id}
+                singleNewData={newData}
+                textLoading={loading}
+              />
+            ))}
+        </div>
       </section>
     </>
   );
