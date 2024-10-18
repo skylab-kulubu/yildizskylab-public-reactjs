@@ -31,7 +31,6 @@ export default function NewsPage() {
 
     fetchNews();
   }, []);
-  console.log(news);
   return (
     <>
       <section
