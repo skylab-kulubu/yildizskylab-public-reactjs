@@ -11,7 +11,7 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
 
   return (
     <button
-      className={`flex gap-4 box-border flex-col items-center max-w-80 text-white border-none outline-none `}
+      className={`flex gap-4 box-border flex-col justify-self-center items-center  text-white border-none outline-none hover:opacity-75  transition delay-150 ease-in-out`}
     >
       <div
         className={`w-80 h-60 bg-slate-700 rounded-xl ${
@@ -19,7 +19,7 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
         }`}
       >
         <LazyLoadImage
-          className={`w-80 h-60 object-cover rounded-xl $`}
+          className={`w-80 h-60  object-cover rounded-xl bg-black`}
           alt={singleNewData?.title}
           effect="blur"
           src={singleNewData?.cover_image.url}
@@ -27,7 +27,7 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
         />
       </div>
       <div
-        className={`flex items-center justify-center h-20 w-80 p-2 text-3xl text-center bg-customAccent rounded-xl ${
+        className={`h-20 w-80 text-3xl flex items-center justify-center box-border text-center bg-[#d4b8f96b] rounded-xl ${
           textLoading ? "animate-pulse" : ""
         }`}
       >
