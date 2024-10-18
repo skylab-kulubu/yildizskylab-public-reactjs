@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { newsFetcher } from "../apis/newsFetcher";
-import NewsComponent from "../Components/newsComponent";
+import NewsCarousel from "../Components/newsCarousel";
 
 export default function NewsPage() {
   const [news, setNews] = useState(null);
@@ -34,10 +34,7 @@ export default function NewsPage() {
   console.log(news);
   return (
     <>
-      <section
-        id="news"
-        className="w-screen lg:pt-36 bg-customDarkPurple box-border"
-      >
+      <section id="news" className="w-screen bg-customDarkPurple box-border">
         <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
           <h2 className="text-customAccent text-3xl lg:text-5xl">HABERLER</h2>
         </div>
@@ -46,24 +43,8 @@ export default function NewsPage() {
           <div className="text-white text-3xl text-center">{`Haberler Yüklenirken Hatayla Karşılaşıldı: ${error}`}</div>
         )}
 
-        <div className="flex gap-10 justify-center">
-          {loading &&
-            Array.from({ length: 4 }).map((_, index) => (
-              <NewsComponent
-                key={index}
-                singleNewData={null}
-                textLoading={loading}
-              />
-            ))}
-          {news &&
-            !loading &&
-            news.map((newData) => (
-              <NewsComponent
-                key={newData.id}
-                singleNewData={newData}
-                textLoading={loading}
-              />
-            ))}
+        <div className="w-5/6 m-auto">
+          <NewsCarousel news={news} loading={loading} />
         </div>
       </section>
     </>
