@@ -34,7 +34,10 @@ export default function NewsPage() {
   console.log(news);
   return (
     <>
-      <section id="news" className="w-screen bg-customDarkPurple box-border">
+      <section
+        id="news"
+        className="w-screen bg-customDarkPurple box-border pt-24 lg:pt-36"
+      >
         <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
           <h2 className="text-customAccent text-3xl lg:text-5xl">HABERLER</h2>
         </div>
