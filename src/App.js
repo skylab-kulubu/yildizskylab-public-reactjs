@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./Pages/landingPage";
 import Navbar from "./Components/navbar";
@@ -11,7 +10,7 @@ import TeamsPage from "./Pages/teams";
 
 function App() {
   return (
-    <div id="App" className="flex flex-col md:gap-0 gap-20">
+    <div id="App" className="flex flex-col md:gap-0 gap-20 overflow-x-hidden">
       <Navbar />
       <LandingPage />
       <AboutPage />
