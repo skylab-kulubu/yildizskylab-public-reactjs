@@ -13,10 +13,7 @@ const TeamsPage = () => {
   };
 
   return (
-    <section
-      className="h-screen snap-start relative pt-24 lg:pt-36  white "
-      id="teams"
-    >
+    <section className="h-screen snap-start relative  white " id="teams">
       <div className="w-screen flex justify-center md:mt-10 mb-16 tracking-widest ">
         <h2 className="text-customAccent text-3xl lg:text-5xl">EKİPLERİMİZ</h2>
       </div>
