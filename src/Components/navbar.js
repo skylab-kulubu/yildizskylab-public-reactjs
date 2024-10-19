@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed flex flex-row justify-between items-center px-3 w-full h-[100px] top-0 left-0 z-50 transition-colors duration-150 text-xl tracking-[0.10em]" duration-300 ${
+      className={`fixed flex flex-row justify-between items-center px-3 w-full h-[100px] top-0 left-0 z-50 transition-colors duration-150 text-xl tracking-[0.10em]" ${
         isScrolled ? " bg-customDarkPurple" : "bg-transparent  "
       } hidden md:flex`}
     >
