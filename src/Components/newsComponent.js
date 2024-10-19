@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Link } from "react-router-dom";
 
 const NewsComponent = ({ singleNewData, textLoading }) => {
   const [loading, setLoading] = useState(true);
@@ -10,7 +11,8 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
   };
 
   return (
-    <button
+    <Link
+      to={`news/${singleNewData?.id}`}
       className={`flex gap-4 box-border flex-col justify-self-center items-center  text-white border-none outline-none hover:opacity-75  transition delay-150 ease-in-out`}
     >
       <div
@@ -33,7 +35,7 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
       >
         {singleNewData?.title}
       </div>
-    </button>
+    </Link>
   );
 };
 
