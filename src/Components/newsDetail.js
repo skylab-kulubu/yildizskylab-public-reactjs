@@ -7,7 +7,7 @@ export default function NewsDetail({ singleNewData, loading }) {
     ? new Date(singleNewData.publish_date).toLocaleDateString()
     : "";
   return (
-    <div>
+    <div className={`${loading ? "animate-pulse" : ""}`}>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 text-white p-4 flex items-center">
         <Link to="/" className="mr-4">
@@ -21,8 +21,8 @@ export default function NewsDetail({ singleNewData, loading }) {
         <div className="p-4 text-white custom-prose max-w-3xl">
           <h1 className="text-3xl font-bold mb-4">{singleNewData?.title}</h1>
           <p className="text-gray-200 mb-4">
-            Yayınlanma Tarihi:{" "}
-            {new Date(publishDate).toLocaleDateString("tr-TR")}
+            {singleNewData ? "Yayınlanma Tarihi: " : ""}
+            {publishDate}
           </p>
 
           <div
