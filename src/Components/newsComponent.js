@@ -12,7 +12,7 @@ const NewsComponent = ({ singleNewData, textLoading }) => {
 
   return (
     <Link
-      to={`news/${singleNewData?.id}`}
+      to={singleNewData ? `news/${singleNewData.id}` : "/"}
       className={`flex gap-4 box-border flex-col justify-self-center items-center  text-white border-none outline-none hover:opacity-75  transition delay-150 ease-in-out`}
     >
       <div
