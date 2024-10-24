@@ -1,19 +1,20 @@
 import React from "react";
 
-
 const AboutPage = () => {
   return (
-    <section className="h-screen w-screen  md:pt-36 bg-customDarkPurple" id="description">
-        
-      <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest">
+    <section
+      className="flex flex-col scroll-mt-52 justify-center items-center box-border gap-20 bg-customDarkPurple"
+      id="description"
+    >
+      <div className="w-screen flex justify-center tracking-widest">
         <h2 className="text-customAccent text-3xl lg:text-5xl">HAKKIMIZDA</h2>
       </div>
       <div className="text-justify lg:text-left h-full flex justify-center sm:items-center lg:items-start px-6  md:px-12 text-xs md:text-lg lg:text-base font-inter tracking-widest ">
         <p className="lg:w-1/2 text-customLightPink text-justify text-base md:text-lg">
-          SKY LAB Bilgisayar Bilimleri Kulübü
-          Yıldız Teknik Üniversitesi bünyesinde ar-ge,proje, organizasyon, iş
-          geliştirme ve tanıtım ekipleri ile ana yapısını oluşturan en aktif ve
-          etkin kulüplerden biridir.
+          SKY LAB Bilgisayar Bilimleri Kulübü Yıldız Teknik Üniversitesi
+          bünyesinde ar-ge,proje, organizasyon, iş geliştirme ve tanıtım
+          ekipleri ile ana yapısını oluşturan en aktif ve etkin kulüplerden
+          biridir.
           <br />
           <br />
           Akran öğrenmesini baz alan workshop ve bootcamp programları ile

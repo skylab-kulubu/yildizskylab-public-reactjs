@@ -4,9 +4,12 @@ import sitesData from "../Data/sitesData";
 
 const SitesPage = () => {
   return (
-    <section className="w-screen lg:pt-36 bg-customDarkPurple " id="sites">
+    <section
+      className="flex flex-col gap-20 items-center justify-center w-screen scroll-mt-40 bg-customDarkPurple "
+      id="sites"
+    >
       {/* Header */}
-      <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
+      <div className="w-screen flex justify-center tracking-widest">
         <h2 className="text-customAccent text-3xl lg:text-5xl">SİTELER</h2>
       </div>
 

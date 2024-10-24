@@ -10,7 +10,7 @@ import TeamsPage from "./Pages/teams";
 
 function App() {
   return (
-    <div id="App" className="flex flex-col md:gap-0 gap-20 overflow-x-hidden">
+    <div id="App" className="flex flex-col gap-64  overflow-x-hidden">
       <Navbar />
       <LandingPage />
       <AboutPage />
