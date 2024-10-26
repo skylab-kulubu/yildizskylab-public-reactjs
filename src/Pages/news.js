@@ -45,7 +45,7 @@ export default function NewsPage() {
           <div className="text-white text-3xl text-center">{`Haberler Yüklenirken Hatayla Karşılaşıldı: ${error}`}</div>
         )}
 
-        <div className="w-5/6 m-auto">
+        <div className="w-full max-[400px]:px-2 px-10 lg:w-11/12 lg:px-0 m-auto">
           <NewsCarousel news={news} loading={loading} />
         </div>
       </section>
