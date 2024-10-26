@@ -35,7 +35,7 @@ export default function NewsPage() {
     <>
       <section
         id="news"
-        className="w-screen scroll-mt-40 flex flex-col items-center justify-center gap-20 sm:py-20 bg-customDarkPurple box-border"
+        className="w-screen scroll-mt-32 flex flex-col items-center justify-center gap-20 sm:py-20 bg-customDarkPurple box-border"
       >
         <div className="w-screen flex justify-center tracking-widest">
           <h2 className="text-customAccent text-3xl lg:text-5xl">HABERLER</h2>
