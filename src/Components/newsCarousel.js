@@ -1,6 +1,7 @@
 import NewsComponent from "./newsComponent";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CarouselButtonGroup from "./carouselButtons";
 
 export default function NewsCarousel({ news, loading }) {
   const responsive = {
@@ -23,7 +24,13 @@ export default function NewsCarousel({ news, loading }) {
   };
 
   return (
-    <Carousel responsive={responsive} infinite={true} itemClass="carousel">
+    <Carousel
+      arrows={false}
+      customButtonGroup={<CarouselButtonGroup />}
+      responsive={responsive}
+      infinite={true}
+      itemClass="carousel"
+    >
       {loading &&
         Array.from({ length: 4 }).map((_, index) => (
           <NewsComponent
