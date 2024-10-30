@@ -9,7 +9,7 @@ const TeamComponent = ({
   handleScroll,
 }) => {
   return (
-    <div className="flex flex-wrap justify-center items-center px-12 flex-wrap snap-x snap-mandatory">
+    <div className="flex flex-wrap justify-center items-center px-12 snap-x snap-mandatory">
       {TeamsData[teamSelect].map((team, index) => (
         <div
           key={index}
