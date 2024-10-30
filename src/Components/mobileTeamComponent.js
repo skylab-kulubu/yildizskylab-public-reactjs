@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import TeamsData from '../Data/teamsData';
-import {FaAnglesRight , FaAnglesLeft} from 'react-icons/fa6';
+import React, { useState } from "react";
+import TeamsData from "../Data/teamsData";
+import { FaAnglesRight, FaAnglesLeft } from "react-icons/fa6";
 
 const MobileTeamComponent = ({ teamSelect }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,12 +24,12 @@ const MobileTeamComponent = ({ teamSelect }) => {
   return (
     <div className="relative w-full flex flex-col items-center">
       {/* Slider Navigation */}
-      <div className="flex items-center justify-between w-full px-12">
+      <div className="flex items-center justify-center w-full gap-20">
         <button
           onClick={handlePrev}
           className="p-2 text-white bg-customAccent rounded-full"
         >
-         <FaAnglesLeft />
+          <FaAnglesLeft />
         </button>
 
         <div className="flex justify-center items-center space-x-4">
@@ -55,8 +55,12 @@ const MobileTeamComponent = ({ teamSelect }) => {
 
       {/* Team Details */}
       <div className="mt-8 text-center">
-        <h2 className="text-customLightPink text-2xl tracking-wide">{selectedTeam.name}</h2>
-        <p className="font-inter text-center text-customLightPink tracking-wide text-lg px-12 mt-4">{selectedTeam.details}</p>
+        <h2 className="text-customLightPink text-lg tracking-wide">
+          {selectedTeam.name}
+        </h2>
+        <p className="font-inter text-center text-customLightPink tracking-wide text-lg px-12 mt-4">
+          {selectedTeam.details}
+        </p>
       </div>
     </div>
   );

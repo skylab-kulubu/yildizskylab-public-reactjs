@@ -14,7 +14,7 @@ const TeamsPage = () => {
 
   return (
     <section
-      className=" flex flex-col scroll-mt-40 justify-center items-center box-border gap-4 relative white"
+      className=" flex flex-col scroll-mt-60 justify-center items-center box-border gap-4 relative white"
       id="teams"
     >
       <div className="w-screen flex justify-center tracking-widest ">
@@ -69,8 +69,8 @@ const TeamsPage = () => {
         <MobileTeamComponent teamSelect={teamSelect} />
       </div>
 
-      <div className="w-screen text-sm lg:text-md flex justify-center">
-        <div className="font-inter w-11/12 lg:w-1/2 text-center text-customLightPink tracking-widest text-lg hidden md:block">
+      <div className="w-screen text-sm lg:text-md flex justify-center max-[1024px]:hidden">
+        <div className="px-20 font-inter tracking-widest text-base lg:text-xl lg:w-5/6 text-center text-customLightPink md:block">
           {
             TeamsData[teamSelect].find((team) => team.name === selectedTeam)
               .details
