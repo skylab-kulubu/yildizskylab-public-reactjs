@@ -5,15 +5,15 @@ import BoardMember from "../Components/boardMember";
 const BoardPage = () => {
   return (
     <section
-      className="w-screen scroll-mt-36 bg-customDarkPurple"
+      className="flex flex-col gap-20 items-center justify-center w-screen scroll-mt-40 bg-customDarkPurple"
       id="board-members"
     >
-      <div className="w-screen flex justify-center md:mt-10 mb-24 tracking-widest mt-12">
+      <div className="w-screen flex justify-center tracking-widest">
         <h2 className="text-customAccent text-3xl lg:text-5xl">
           YÖNETİM KURULUMUZ
         </h2>
       </div>
-      <div className="flex flex-wrap justify-center mx-10  gap-6 sm:gap-8 md:gap-12 lg:gap-32">
+      <div className="flex flex-wrap justify-center mx-10  gap-6 sm:gap-8 md:gap-12 lg:gap-20">
         {boardMembers.map((member, index) => (
           <BoardMember key={index} member={member} />
         ))}
