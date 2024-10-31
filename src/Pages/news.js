@@ -35,14 +35,14 @@ export default function NewsPage() {
     <>
       <section
         id="news"
-        className="w-screen scroll-mt-32 flex flex-col items-center justify-center gap-20 sm:py-20 bg-customDarkPurple box-border"
+        className="w-screen scroll-mt-40 flex flex-col items-center justify-center gap-20 bg-customDarkPurple box-border"
       >
         <div className="w-screen flex justify-center tracking-widest">
           <h2 className="text-customAccent text-3xl lg:text-5xl">HABERLER</h2>
         </div>
 
         {error && error !== "Request aborted" && (
-          <div className="text-white text-3xl text-center">{`Haberler Yüklenirken Hatayla Karşılaşıldı: ${error}`}</div>
+          <div className="h-72 flex items-center justify-center text-white text-3xl text-center">{`Haberler Yüklenirken Hatayla Karşılaşıldı: ${error}`}</div>
         )}
 
         <div className="w-full max-[400px]:px-2 px-10 lg:w-11/12 lg:px-0 m-auto">
