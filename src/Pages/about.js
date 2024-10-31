@@ -3,7 +3,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <section
-      className="flex flex-col scroll-mt-48 justify-center items-center box-border gap-20 bg-customDarkPurple"
+      className="flex flex-col scroll-mt-40 justify-center items-center box-border gap-20 bg-customDarkPurple"
       id="description"
     >
       <div className="w-screen flex justify-center tracking-widest">

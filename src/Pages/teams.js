@@ -14,10 +14,10 @@ const TeamsPage = () => {
 
   return (
     <section
-      className=" flex flex-col scroll-mt-60 justify-center items-center box-border gap-4 relative white"
+      className="lg:min-h-[600px] flex flex-col scroll-mt-40 justify-center items-center box-border relative white"
       id="teams"
     >
-      <div className="w-screen flex justify-center tracking-widest ">
+      <div className="w-screen flex justify-center tracking-widest pb-10 ">
         <h2 className="text-customAccent text-3xl lg:text-5xl">EKİPLERİMİZ</h2>
       </div>
       <div className="text-customLightPink text-xl tracking-wide lg:text-2xl my-10 flex justify-center">

@@ -5,7 +5,7 @@ import BoardMember from "../Components/boardMember";
 const BoardPage = () => {
   return (
     <section
-      className="flex flex-col gap-20 items-center justify-center w-screen scroll-mt-40 bg-customDarkPurple"
+      className="flex flex-col gap-20 items-center justify-center w-screen scroll-mt-28 bg-customDarkPurple"
       id="board-members"
     >
       <div className="w-screen flex justify-center tracking-widest">
