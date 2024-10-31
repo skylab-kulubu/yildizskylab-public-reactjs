@@ -13,7 +13,7 @@ const BoardPage = () => {
           YÖNETİM KURULUMUZ
         </h2>
       </div>
-      <div className="flex flex-wrap justify-center mx-10  gap-6 sm:gap-8 md:gap-12 lg:gap-20">
+      <div className="flex flex-wrap justify-center gap-6 px-10 sm:gap-8 md:gap-12 lg:gap-20 2xl:max-w-[1800px] justify-self-center">
         {boardMembers.map((member, index) => (
           <BoardMember key={index} member={member} />
         ))}

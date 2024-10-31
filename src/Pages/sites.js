@@ -14,7 +14,7 @@ const SitesPage = () => {
       </div>
 
       {/* Sites Grid */}
-      <div className="flex flex-wrap justify-center gap-6 px-2 sm:gap-8 md:gap-12 lg:gap-20 2xl:max-w-[2000px] justify-self-center relative z-20">
+      <div className="flex flex-wrap justify-center gap-6 px-10 sm:gap-8 md:gap-12 lg:gap-20 2xl:max-w-[1800px] justify-self-center relative z-20">
         {sitesData.map((site, index) => (
           <SiteComponent key={index} site={site} />
         ))}
