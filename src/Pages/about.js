@@ -9,7 +9,7 @@ const AboutPage = () => {
       <div className="w-screen flex justify-center tracking-widest">
         <h2 className="text-customAccent text-3xl lg:text-5xl">HAKKIMIZDA</h2>
       </div>
-      <p className="text-customLightPink px-20 font-inter tracking-widest text-base md:text-lg lg:text-2xl xl:w-4/6 text-justify">
+      <p className="text-customLightPink px-12 md:px-20 font-inter tracking-widest text-base md:text-lg lg:text-2xl xl:w-4/6 md:text-justify text-center">
         SKY LAB Bilgisayar Bilimleri Kulübü Yıldız Teknik Üniversitesi
         bünyesinde ar-ge,proje, organizasyon, iş geliştirme ve tanıtım ekipleri
         ile ana yapısını oluşturan en aktif ve etkin kulüplerden biridir.
@@ -25,10 +25,7 @@ const AboutPage = () => {
         <br />
         <br />
         Bilgisayar bilimleri ekosisteminde hem sosyalleşerek hem de öğrenip
-        geliştirerek var olmak istiyorsanız{" "}
-        <span className="text-customAccent font-bold hover:text-[#3cf6d4] transition-colors duration-150">
-          <a href="#">bize katılın!</a>
-        </span>
+        geliştirerek var olmak istiyorsanız bize katılın!
       </p>
     </section>
   );

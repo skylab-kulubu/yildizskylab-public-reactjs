@@ -58,7 +58,7 @@ const MobileTeamComponent = ({ teamSelect }) => {
         <h2 className="text-customLightPink text-lg tracking-wide">
           {selectedTeam.name}
         </h2>
-        <p className="font-inter text-center text-customLightPink tracking-wide text-lg px-12 mt-4">
+        <p className="font-inter text-center text-customLightPink tracking-widest text-lg px-12 mt-4">
           {selectedTeam.details}
         </p>
       </div>

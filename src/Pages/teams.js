@@ -70,7 +70,7 @@ const TeamsPage = () => {
       </div>
 
       <div className="w-screen text-sm lg:text-md flex justify-center max-[1024px]:hidden">
-        <div className="px-20 font-inter tracking-widest text-base lg:text-xl lg:w-5/6 text-center text-customLightPink md:block">
+        <div className="mt-20 px-20 font-inter tracking-widest text-base lg:text-xl lg:w-5/6 text-center text-customLightPink md:block">
           {
             TeamsData[teamSelect].find((team) => team.name === selectedTeam)
               .details
