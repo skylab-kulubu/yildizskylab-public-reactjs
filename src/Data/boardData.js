@@ -43,10 +43,17 @@ export const boardMembers = [
       linkedin: 'https://www.linkedin.com/in/semih-demir-36a1011a9/',
     },
     {
+      firstName: 'Senanur',
+      lastName: 'Dincel',
+      department: 'Sekreter',
+      photo: { photoUrl: 'https://yusufacmaci.com/yildizskylab/images/rF-Nl_TafjZW3SpcsLR79scf4Z14ZBLKUR7J_04JodBVPa-6eSlKaQ1DMC_Tp3CrwP_HNxAewEKNat4a-91b3A==' },
+      linkedin: 'https://www.linkedin.com/in/mehmet-emin-geben-012a31291/',
+    },
+    {
       firstName: 'Mehmet Emin',
       lastName: 'Geben',
       department: 'Sayman',
-      photo: { photoUrl: 'https://www.hostpapa.com/knowledgebase/app/uploads/2018/04/1-13.png' },
+      photo: { photoUrl: 'https://yusufacmaci.com/yildizskylab/images/WCXe_2Nf6wHMTTMxErmI6Rue3an30-ta3gbssNMH9YpZVchUc5VhQ82u8Jdp3qxAOxd5orECgwR08jq_9XoShw==' },
       linkedin: 'https://www.linkedin.com/in/mehmet-emin-geben-012a31291/',
     },
   ];
