@@ -45,9 +45,9 @@ export const boardMembers = [
     {
       firstName: 'Senanur',
       lastName: 'Dincel',
-      department: 'Sekreter',
+      department: 'Genel Sekreter',
       photo: { photoUrl: 'https://yusufacmaci.com/yildizskylab/images/rF-Nl_TafjZW3SpcsLR79scf4Z14ZBLKUR7J_04JodBVPa-6eSlKaQ1DMC_Tp3CrwP_HNxAewEKNat4a-91b3A==' },
-      linkedin: 'https://www.linkedin.com/in/mehmet-emin-geben-012a31291/',
+      linkedin: 'https://www.linkedin.com/in/senanur-dincel-402629283/',
     },
     {
       firstName: 'Mehmet Emin',
