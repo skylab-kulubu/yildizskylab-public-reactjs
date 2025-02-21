@@ -14,7 +14,7 @@ export default function NewsRoute() {
     const fetchNews = async () => {
       try {
         const newsData = await newsFetcher(
-          "https://yusufacmaci.com/yildizskylab/news?page_id=1&page_size=5"
+          "https://api.yildizskylab.com/news?page_id=1&page_size=5"
         );
 
         setNews(newsData.data);
