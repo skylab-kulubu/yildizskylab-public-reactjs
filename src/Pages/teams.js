@@ -77,6 +77,34 @@ const TeamsPage = () => {
           }
         </div>
       </div>
+
+      {/* Arge Butonu */}
+      {teamSelect === 'arge' && (
+        <div className="w-screen flex justify-center mt-6 mb-8">
+          <a
+            href="https://skyl.app/arge-basvuru-formu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-customAccent text-white py-3 px-8 rounded-lg hover:bg-opacity-90 transition-colors text-center text-sm lg:text-base"
+          >
+            SKY LAB Arge Ekiplerine katılmak istiyorsan tıkla
+          </a>
+        </div>
+      )}
+
+      {/* Medya Butonu */}
+      {teamSelect === 'social' && selectedTeam === 'skymedya' && (
+        <div className="w-screen flex justify-center mt-6 mb-8">
+          <a
+            href="https://skyl.app/skymedya-basvuru-formu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-customAccent text-white py-3 px-8 rounded-lg hover:bg-opacity-90 transition-colors text-center text-sm lg:text-base"
+          >
+            SKYMEDYA ekibine katılmak istiyorsan tıkla
+          </a>
+        </div>
+      )}
     </section>
   );
 };

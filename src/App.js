@@ -20,7 +20,9 @@ function App() {
       <LandingPage />
       <AboutPage />
       <TeamsPage />
+      {/*
       <NewsPage />
+        */}
       <SitesPage />
       <BoardPage />
       <Footer />

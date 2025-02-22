@@ -32,7 +32,7 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="flex flex-col justify-center items-center text-white text-[12px] sm:text-[13px]">
-        <p className="mt-1">2024</p>
+        <p className="mt-1">2025</p>
       </div>
     </div>
   );

@@ -71,12 +71,15 @@ const Navbar = () => {
         >
           EKİPLER
         </button>
+        {/* 
         <button
           onClick={() => scrollToElement("news")}
           className="text-[#eadaff] hover:text-[#27a68e] px-2 py-1 cursor-pointer transition-colors duration-150 text-xl tracking-[0.10em]"
         >
           HABERLER
         </button>
+        */}
+
         <button
           onClick={() => scrollToElement("sites")}
           className="text-[#eadaff] hover:text-[#27a68e] px-2 py-1 cursor-pointer transition-colors duration-150 text-xl tracking-[0.10em]"

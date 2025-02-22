@@ -17,7 +17,7 @@ export const boardMembers = [
     {
       firstName: 'Senanur',
       lastName: 'Dincel',
-      department: 'Sekreter',
+      department: 'Genel Sekreter',
       photo: { photoUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQGoDEFseTr8Wg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729157677198?e=1745452800&v=beta&t=c25nBVHzXSeeg3lxBAvE6CVJUd77h6P9QCL8Wem1hzo' },
       linkedin: 'https://www.linkedin.com/in/senanur-dincel-402629283/',
     },
@@ -48,13 +48,6 @@ export const boardMembers = [
       department: 'Medya Ve Tanıtım Koordinatörü',
       photo: { photoUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQH4JjMs4agk5Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715797011165?e=1745452800&v=beta&t=FkVejThLbjJHLLtpEmXypB9xEDf-4hr_T8yBAUzLbrM' },
       linkedin: 'https://www.linkedin.com/in/semih-demir-36a1011a9/',
-    },
-    {
-      firstName: 'Senanur',
-      lastName: 'Dincel',
-      department: 'Genel Sekreter',
-      photo: { photoUrl: 'https://yusufacmaci.com/yildizskylab/images/rF-Nl_TafjZW3SpcsLR79scf4Z14ZBLKUR7J_04JodBVPa-6eSlKaQ1DMC_Tp3CrwP_HNxAewEKNat4a-91b3A==' },
-      linkedin: 'https://www.linkedin.com/in/senanur-dincel-402629283/',
     },
     {
       firstName: 'Mehmet Emin',
